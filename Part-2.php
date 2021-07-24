@@ -11,7 +11,7 @@ if(isset($_POST["nom"], $_POST["texte"])){
     $nom = $_POST["nom"];
     $texte = $_POST["texte"];
 
-    $article = new Article($nom, $texte);
+    $article = new Article(htmlspecialchars($nom), htmlspecialchars($texte));
     $article->getName("Je m'appelle ");
     echo "<br>";
     $article->getText("Voici mon texte : ");
