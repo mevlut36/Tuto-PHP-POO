@@ -3,7 +3,6 @@
 class Article {
     private $name;
     private $text;
-    private $date;
 
     public function __construct($name, $text){
         $this->name = $name;
